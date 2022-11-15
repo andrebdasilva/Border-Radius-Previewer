@@ -34,18 +34,20 @@ const bordersResult = (topLeft, topRight, bottomLeft, bottomRight) => {
 
 const copyToClipboard = () => {
 	navigator.clipboard.writeText(`border-radius: ${result.value};`);
-
-	span.style.top = "50%";
+	
 	span.style.opacity = "0.8";
 	span.style.width = "16rem";
 	span.style.height = "4rem";
-	span.innerText = "Copiado Com Sucesso"
+
+	setTimeout(() => {
+		span.innerText = "Copiado Com Sucesso";
+	}, 500);
 
 	setTimeout(() => {		
-		span.style.top = "120%";
 		span.style.opacity = "0.5";
 		span.style.width = "0rem";
 		span.style.height = "0rem";
+		span.innerText = "";
 	}, 2000);
 	
 };
