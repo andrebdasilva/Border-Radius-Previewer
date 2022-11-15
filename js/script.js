@@ -5,8 +5,6 @@ let result = document.querySelector("#result");
 let btnCopy = document.querySelector("#btn-copy");
 let span = document.querySelector("span")
 
-console.log(result.value);
-
 const changingBorders = (event) => {
 
 	if (event.target.id == "top-left") {
