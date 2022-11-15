@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+:root{
+	--bg-color: #0a2472;
+	--text-color: #fff;
+	--text-color-dark: #e0e0e0;
+	--border-bg-color: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);	
+	--button-color: #13A5F1;
+	--button-color-hover: #1C8EEA;
+	
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+body{
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header, main{
+	padding: 2rem ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#border-previewer{
+	width: 32rem;
+	height: 32rem;
+	position: relative;
+	background: var(--border-bg-color);
+}
+
+input{
+	outline: none;
+	border: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+	text-align: center;
+	width: 8%;
+	position: absolute;
+	border-radius: .2rem;	
+}
+
+input[type=number]:nth-child(1){
+	left: -3rem;
+	top: 0;
+}
+
+input[type=number]:nth-child(2){
+	right: -3rem;
+	top: 0;
+}
+
+input[type=number]:nth-child(3){
+	left: -3rem;
+	bottom: 0;
+}
+
+input[type=number]:nth-child(4){
+	right: -3rem;
+	bottom: 0;
+}
+
+#border-result{
+	padding: 4rem 0;
+	display: flex;	
+	align-items: center;
+	width: 100%;
+}
+
+#border-result p{
+	margin-right: 1rem;	
+	font-size: 1.5rem;
+}
+
+#border-result input{
+	width: 40%;
+	padding: .4rem;
+}
+
+#border-result input[type=button]{
+	width: 20%;
+	background-color: var(--button-color);
+	color: var(--text-color-dark);
+	cursor: pointer;
+	border-top-right-radius: .5rem;
+	border-bottom-right-radius: .5rem;
+	transition: 500ms;
+}
+
+#border-result input[type=button]:hover{
+	background-color: var(--button-color-hover);
+	color: var(--text-color-dark);
+}
+
+#border-result span{
+	position: absolute;
+	top: 88%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: var(--text-color);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	width: 16rem;
+	height: 2rem;	
+}
+
+footer{
+	padding: 2rem;
+	display: flex;	
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+
+footer a {
+	display: flex;
+	gap: .5rem;
+}
