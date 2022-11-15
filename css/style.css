@@ -117,16 +117,18 @@ input[type=number]:nth-child(4){
 
 #border-result span{
 	position: absolute;
-	top: 88%;
+	top: 120%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	background-color: var(--text-color);
-	display: none;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: black;
-	width: 16rem;
-	height: 2rem;	
+	width: 0;
+	height: 0;
+	opacity: 0;
+	transition: all 500ms ease;
 }
 
 footer{
